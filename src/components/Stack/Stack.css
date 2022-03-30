@@ -58,3 +58,18 @@
     margin-top: 1rem;
   }
 }
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .about__stack {
+    height: 20vh;
+  }
+
+  .about__stack i {
+    /* font-size: 500%; */
+  }
+
+  .stack__text {
+    font-size: 130%;
+    margin-top: 1rem;
+  }
+}

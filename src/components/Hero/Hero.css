@@ -119,3 +119,19 @@
     margin-top: 3rem;
   }
 }
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .hero__title,
+  .hero__paragraph {
+    font-size: 3.5rem;
+  }
+  .hero__title--name {
+    font-size: 3.5rem;
+  }
+  .main__button {
+    width: 28rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+}

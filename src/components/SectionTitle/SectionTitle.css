@@ -17,3 +17,17 @@
   margin-top: 0.2rem;
   margin-bottom: 2rem;
 }
+
+@media (min-width: 901px) and (max-width: 1279px) {
+  .section-title {
+    justify-self: flex-start;
+    text-align: center;
+    font-size: 3.4rem;
+    font-family: var(--secondary-text);
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    line-height: 4.9rem;
+    color: var(--secondary-grey);
+    margin-top: 1rem;
+  }
+}

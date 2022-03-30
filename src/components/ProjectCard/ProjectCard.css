@@ -29,6 +29,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#272929",endColorstr="#120d02",GradientType=1);
 }
 
+.card:hover {
+  background: none;
+}
 .project__name {
   color: var(--main-white);
   font-size: 2.1rem;
@@ -188,5 +191,52 @@
     width: 15rem;
     padding: 1rem;
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 901px) {
+  .card {
+    width: 80%;
+    height: 32rem;
+    margin-bottom: 2rem;
+  }
+
+  .project__name {
+    font-size: 3.2rem;
+    margin-left: 0.4rem;
+  }
+
+  .project__name > svg {
+    margin-left: 0.4rem;
+    margin-bottom: -0.6rem;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    font-size: 2rem;
+    transition: all 0.4s ease-out;
+  }
+
+  .projects__container {
+    flex-direction: column;
+  }
+
+  .project__info__title {
+    font-size: 2.8rem;
+  }
+  .project__info__subtitle {
+    font-size: 2rem;
+  }
+  .project__info__stack {
+    font-size: 1.8rem;
+  }
+  .project__link {
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1279px) {
+  .card:last-child {
+    margin-top: 2rem;
   }
 }

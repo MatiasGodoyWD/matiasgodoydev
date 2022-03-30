@@ -169,7 +169,7 @@
   font-size: 1.1rem;
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 900px) {
   .contact__form {
     width: 100%;
   }
@@ -250,5 +250,57 @@
     background-color: red;
     border-radius: 50%;
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1279px) {
+  .contact__form {
+    width: 70%;
+  }
+  .title-modifier {
+    font-size: 3.4rem;
+  }
+
+  .underscore-modifier {
+    width: 8rem;
+  }
+  .form__input {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .form__textarea {
+    min-height: 15rem;
+    max-height: 15rem;
+    font-size: 1.5rem;
+  }
+  .form__submit {
+    width: 80%;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .form__error {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0.6rem 0rem;
+  }
+
+  #form__confirmation {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .fa-check {
+    margin-top: 0.1rem;
+    margin-right: 0.5rem;
+    margin-left: -0.5rem;
+    padding: 0.25rem 0.32rem;
+    font-size: 0.9rem;
+  }
+
+  .form__error .fa-xmark {
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.35rem;
+
+    font-size: 0.75rem;
   }
 }

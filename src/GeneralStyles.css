@@ -181,3 +181,9 @@ html {
     transform: translateZ(800px) translateX(800px);
   }
 }
+
+@media (min-width: 600px) and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}

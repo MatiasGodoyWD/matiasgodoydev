@@ -11,13 +11,25 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__media">
-        <a href="about">
+        <a
+          href="https://github.com/MatiasGodoyWD"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
         </a>
-        <a href="about">
+        <a
+          href="https://www.linkedin.com/in/matiasgodoywd/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
         </a>
-        <a href="about">
+        <a
+          href="https://twitter.com/MatiasGodoyWD"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
         </a>
       </div>
