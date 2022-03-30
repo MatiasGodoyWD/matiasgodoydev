@@ -4,7 +4,7 @@ import "./Description.css";
 
 const Description = () => {
   return (
-    <div className="about__info ">
+    <div data-aos="fade-right" className="about__info ">
       <div className="info__img__container ">
         <img src={profilePicture} alt="Profile" className="info__img" />
       </div>

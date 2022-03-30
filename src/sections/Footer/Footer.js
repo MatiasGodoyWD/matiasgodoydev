@@ -9,7 +9,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer data-aos="fade-left" className="footer">
       <div className="footer__media">
         <a href="about">
           <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>

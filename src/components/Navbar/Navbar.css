@@ -1,5 +1,6 @@
 .navbar {
   width: 100%;
+  max-width: 3000px;
   background-attachment: fixed;
   animation-name: background;
   animation-iteration-count: infinite;
@@ -17,7 +18,8 @@
   font-weight: 400;
   position: fixed;
   top: 0;
-  left: 0;
+  left: auto;
+  right: auto;
   height: 10vh;
   z-index: 1;
   animation-name: background;

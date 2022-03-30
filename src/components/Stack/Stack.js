@@ -11,7 +11,7 @@ import {
 
 const Stack = () => {
   return (
-    <div className="about__stack">
+    <div data-aos="fade-right" className="about__stack">
       <div className="stack__container">
         <FontAwesomeIcon icon={faHtml5} />
         <p className="stack__text">HTML</p>

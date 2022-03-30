@@ -4,8 +4,10 @@ import "./SectionTitle.css";
 const SectionTitle = ({ title }) => {
   return (
     <>
-      <h2 class="section-title">{title}</h2>
-      <div class="section-title__underscore"></div>
+      <h2 data-aos="fade-right" className="section-title">
+        {title}
+      </h2>
+      <div data-aos="fade-right" className="section-title__underscore"></div>
     </>
   );
 };

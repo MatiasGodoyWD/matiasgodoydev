@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+
 const Hero = () => {
   return (
     <div className="hero flex-center">

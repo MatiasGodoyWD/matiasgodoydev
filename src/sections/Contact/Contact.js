@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useForm } from "react-hook-form";
 import { schema } from "../../helpers/schema";
+import { sendMail } from "../../helpers/sendMail";
 
 const Contact = () => {
   const [isValid, setIsValid] = useState(false);
@@ -21,8 +22,16 @@ const Contact = () => {
   });
 
   const onSubmit = (data) => {
+    const { email, fullName, msg } = data;
+
     console.log(data);
     setIsValid(true);
+    const templateParams = {
+      email: email,
+      fullName: fullName,
+      msg: msg,
+    };
+    sendMail(templateParams);
     reset({ email: "", fullName: "", msg: "" });
   };
   useEffect(() => {
@@ -40,13 +49,18 @@ const Contact = () => {
       <section className="contact" id="contact">
         <div className="filler"></div>
         <form
+          data-aos="fade-up"
           className="contact__form"
           name="contact"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <h2 className="title-modifier">Contacto</h2>
-          <div className="underscore-modifier"></div>
-          <h3 class="form__title">¿Querés que trabajemos juntos?</h3>
+          <h2 data-aos="fade-right" className="title-modifier">
+            Contacto
+          </h2>
+          <div data-aos="fade-left" className="underscore-modifier"></div>
+          <h3 data-aos="fade-left" class="form__title">
+            ¿Querés que trabajemos juntos?
+          </h3>
           <Input
             control={control}
             name="fullName"

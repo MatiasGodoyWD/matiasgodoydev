@@ -55,7 +55,11 @@
 }
 
 .form__input,
-.form__textarea {
+.form__textarea,
+.form__input:focus,
+.form__textarea:focus,
+.form__input:active,
+.form__textarea:active {
   background-color: var(--main-black);
   border: 0.1rem solid var(--main-white);
   border: 0.1rem solid var(--secondary-grey);
@@ -133,10 +137,9 @@
   border-radius: 50%;
   font-size: 0.6rem;
 }
-.fa-xmark {
+.form__error .fa-xmark {
   margin-top: -0.15rem;
   margin-right: 0.4rem;
-
   padding: 0.2rem 0.3rem;
   color: white;
   background-color: red;
@@ -215,7 +218,7 @@
     font-size: 0.9rem;
   }
 
-  .fa-xmark {
+  .form__error .fa-xmark {
     margin-top: -0.22rem;
     margin-right: 0.4rem;
 

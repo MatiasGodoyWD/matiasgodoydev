@@ -6,12 +6,14 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section className="about-me" id="about">
-      <div className="filler"></div>
-      <SectionTitle title="Sobre mí"></SectionTitle>
-      <Description />
-      <Stack />
-    </section>
+    <>
+      <section className="about-me" id="about">
+        <div className="filler"></div>
+        <SectionTitle title="Sobre mí"></SectionTitle>
+        <Description />
+        <Stack />
+      </section>
+    </>
   );
 };
 

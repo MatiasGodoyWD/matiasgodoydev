@@ -7,6 +7,12 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
+  window.onscroll = () => {
+    if (clicked) {
+      setClicked(!clicked);
+    }
+  };
+
   const handleClick = (e) => {
     setClicked(!clicked);
   };

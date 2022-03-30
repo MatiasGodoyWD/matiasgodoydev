@@ -35,6 +35,9 @@
   font-weight: 400;
   font-family: var(--secondary-text);
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project__info__content {
@@ -50,6 +53,7 @@
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   border-radius: 0.8rem;
+  overflow-y: hidden;
 }
 
 .project__info__content:hover {
@@ -65,6 +69,14 @@
   font-size: 1.6rem;
   text-align: center;
   letter-spacing: 0.11rem;
+}
+
+.project__info__subtitle {
+  font-family: var(--primary-text);
+  color: var(--secondary-grey);
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.07rem;
 }
 
 .project__info__text {
@@ -122,6 +134,21 @@
   opacity: 0;
   -webkit-animation: slide-in-top 0.4s ease-in both;
   animation: slide-in-top 0.4s ease-in both;
+}
+.project__info__content:hover > .links__container {
+  opacity: 0;
+  -webkit-animation: slide-in-fwd-bottom 0.6s ease-in both;
+  animation: slide-in-fwd-bottom 0.6s ease-in both;
+}
+
+.project__name > svg {
+  /* padding-left: 0.5rem; */
+  margin-left: 0.4rem;
+  margin-bottom: -0.5rem;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  font-size: 1rem;
+  transition: all 0.4s ease-out;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
