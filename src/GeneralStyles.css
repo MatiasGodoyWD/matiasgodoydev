@@ -1,0 +1,33 @@
+:root {
+  --main-white: #f8f8f8;
+  --main-black: #171717;
+  --secondary-grey: #444444;
+  --tertiary-grey: #7c7c7c;
+  --secondary-pink: #f73a73;
+  --divider: #f3f3f3;
+  --accent: #02b9b6;
+  --primary-text: "Hind Siliguri", sans-serif;
+  --secondary-text: "Cairo", sans-serif;
+  --tertiary-text: "Yantramanav", sans-serif;
+}
+
+body {
+  background-color: var(--main-white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  html {
+    font-size: 8.5px;
+  }
+}

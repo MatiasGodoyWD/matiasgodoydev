@@ -1,0 +1,121 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__text {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__title,
+.hero__paragraph {
+  color: var(--main-white);
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: var(--primary-text);
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  line-height: 4.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__title {
+  -webkit-animation: slide-in-fwd-left 0.7s ease-in-out both;
+  animation: slide-in-fwd-left 0.7s ease-in-out both;
+}
+
+.hero__paragraph {
+  -webkit-animation: slide-in-fwd-left 0.5s 0.7s ease-in-out both;
+  animation: slide-in-fwd-left 0.5s 0.7s ease-in-out both;
+}
+
+.hero__title--name {
+  color: var(--secondary-pink);
+  font-size: 3.4rem;
+  padding-left: 0.8rem;
+}
+
+.main__button {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.6rem;
+  margin-top: 1.5rem;
+  border: 0.4px solid var(--main-white);
+  color: var(--main-white);
+  font-family: var(--tertiary-text);
+  letter-spacing: 0.11rem;
+  font-weight: 500;
+  text-align: center;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  -webkit-animation: slide-in-fwd-bottom 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s both;
+  animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s
+    both;
+}
+
+.main__button svg {
+  /* padding-left: 0.5rem; */
+  margin-left: 0.6rem;
+  margin-top: 0.1rem;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+
+  transition: all 0.4s ease-out;
+}
+
+.main__button p {
+  margin-left: 0.6rem;
+}
+
+.main__button:hover,
+.main__button:active,
+.main__button:focus {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+}
+
+.main__button:hover svg,
+.main__button:active svg,
+.main__button:focus svg {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .hero__text {
+    width: 85%;
+  }
+
+  .hero__title {
+    flex-wrap: wrap;
+  }
+
+  .hero__title,
+  .hero__paragraph {
+    font-size: 3rem;
+  }
+  .hero__title--name {
+    font-size: 3rem;
+  }
+  .main__button {
+    width: 18rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}

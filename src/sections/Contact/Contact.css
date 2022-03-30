@@ -1,0 +1,228 @@
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--main-black);
+  padding-bottom: 2rem;
+}
+
+.title-modifier {
+  /* justify-self: flex-start; */
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--secondary-text);
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  line-height: 4.9rem;
+  color: var(--divider);
+  margin-top: 1rem;
+}
+
+.underscore-modifier {
+  background-color: var(--divider);
+  height: 0.1rem;
+  width: 7rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact__form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__title {
+  font-family: var(--tertiary-text);
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__control {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form__input,
+.form__textarea {
+  background-color: var(--main-black);
+  border: 0.1rem solid var(--main-white);
+  border: 0.1rem solid var(--secondary-grey);
+  color: var(--divider);
+  font-size: 1.1rem;
+  font-family: var(--tertiary-text);
+  width: 100%;
+}
+
+.form__input {
+  padding: 0.8rem;
+}
+
+.form__textarea {
+  padding: 0.8rem;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 10rem;
+  max-height: 10rem;
+}
+
+.form__control-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.form__submit {
+  padding: 0.5rem;
+  width: 80%;
+  background-color: var(--main-black);
+  border: 0.1rem solid var(--main-white);
+  border: 0rem solid var(--secondary-grey);
+  color: var(--secondary-grey);
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-family: var(--primary-text);
+  transition: 0.4s all ease-out;
+  background-color: var(--accent);
+  color: var(--main-white);
+  cursor: pointer;
+  margin-bottom: 1.4rem;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--secondary-grey);
+  font-family: var(--tertiary-text);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+}
+
+.form__submit:hover {
+  background-color: var(--secondary-pink);
+  color: var(--main-white);
+  transition: 0.4s all ease-in;
+}
+
+.form__submit:focus,
+.main__button:focus {
+  outline: none;
+}
+
+.fa-check {
+  margin-top: 0.1rem;
+  margin-right: 0.5rem;
+  margin-left: -0.5rem;
+  padding: 0.25rem 0.3rem;
+  color: white;
+  background-color: rgb(109, 209, 109);
+  border-radius: 50%;
+  font-size: 0.6rem;
+}
+.fa-xmark {
+  margin-top: -0.15rem;
+  margin-right: 0.4rem;
+
+  padding: 0.2rem 0.3rem;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.55rem;
+}
+.form__error {
+  color: var(--main-white);
+  font-family: var(--primary-text);
+  display: flex;
+  font-size: 0.85rem;
+  align-items: center;
+  padding: 0.1rem 0rem;
+  height: 2.2rem;
+  align-self: flex-start;
+  margin-bottom: 0.2rem;
+}
+
+#form__confirmation {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding: 0.5rem 0rem;
+  width: 80%;
+  justify-content: center;
+  font-weight: 500;
+  font-family: var(--secondary-text);
+  color: var(--main-white);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .contact__form {
+    width: 100%;
+  }
+  .form__input,
+  .form__textarea {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .form__input {
+    height: 4rem;
+  }
+  .form__textarea {
+    min-height: 15rem;
+    max-height: 15rem;
+  }
+  .form__submit {
+    width: 80%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .form__error {
+    font-size: 1.3rem;
+    margin: 0.5rem 0rem;
+  }
+
+  #form__confirmation {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+
+  .fa-check {
+    margin-top: 0.1rem;
+    margin-right: 0.5rem;
+    margin-left: -0.5rem;
+    padding: 0.25rem 0.32rem;
+    color: white;
+    background-color: rgb(109, 209, 109);
+    border-radius: 50%;
+    font-size: 0.9rem;
+  }
+
+  .fa-xmark {
+    margin-top: -0.22rem;
+    margin-right: 0.4rem;
+
+    padding: 0.2rem 0.33rem;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 0.9rem;
+  }
+}

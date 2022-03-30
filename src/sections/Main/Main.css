@@ -1,0 +1,5 @@
+.main-content {
+  background-color: var(--main-white);
+  width: 100%;
+  flex-direction: column;
+}
