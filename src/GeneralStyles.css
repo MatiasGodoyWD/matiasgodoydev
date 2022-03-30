@@ -9,10 +9,12 @@
   --primary-text: "Hind Siliguri", sans-serif;
   --secondary-text: "Cairo", sans-serif;
   --tertiary-text: "Yantramanav", sans-serif;
+  overflow: hidden;
 }
 
 body {
   background-color: var(--main-white);
+  overflow: hidden;
 }
 
 html {
