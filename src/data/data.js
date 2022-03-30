@@ -9,7 +9,7 @@ export const projects = [
   {
     name: "Fauno",
     stack: "ReactJs",
-    description: "Product",
+    description: "Empresarial",
     repo: "s",
     demo: "s",
   },
