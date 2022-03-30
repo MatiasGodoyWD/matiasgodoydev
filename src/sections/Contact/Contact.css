@@ -6,7 +6,7 @@
   position: relative;
   flex-direction: column;
   background-color: var(--main-black);
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .title-modifier {
@@ -55,11 +55,7 @@
 }
 
 .form__input,
-.form__textarea,
-.form__input:focus,
-.form__textarea:focus,
-.form__input:active,
-.form__textarea:active {
+.form__textarea {
   background-color: var(--main-black);
   border: 0.1rem solid var(--main-white);
   border: 0.1rem solid var(--secondary-grey);
@@ -177,6 +173,32 @@
   .contact__form {
     width: 100%;
   }
+  .title-modifier {
+    /* justify-self: flex-start; */
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--secondary-text);
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    line-height: 4.9rem;
+    color: var(--divider);
+    margin-top: 0.5rem;
+  }
+
+  .underscore-modifier {
+    width: 8rem;
+    margin-top: 0.1rem;
+  }
+
+  .form__title {
+    font-family: var(--tertiary-text);
+    font-size: 1.8rem;
+    color: var(--accent);
+    font-weight: 300;
+    margin: 1rem 0rem 2rem 0rem;
+    text-align: center;
+  }
+
   .form__input,
   .form__textarea {
     font-size: 1.5rem;
@@ -185,25 +207,28 @@
   }
 
   .form__input {
-    height: 4rem;
+    height: 6rem;
+    font-size: 2rem;
   }
   .form__textarea {
-    min-height: 15rem;
-    max-height: 15rem;
+    min-height: 18rem;
+    max-height: 18rem;
+    font-size: 2rem;
   }
   .form__submit {
     width: 80%;
     padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .form__error {
-    font-size: 1.3rem;
-    margin: 0.5rem 0rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0.6rem 0rem;
   }
 
   #form__confirmation {
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 80%;
   }
 
@@ -219,13 +244,11 @@
   }
 
   .form__error .fa-xmark {
-    margin-top: -0.22rem;
-    margin-right: 0.4rem;
-
-    padding: 0.2rem 0.33rem;
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.35rem;
     color: white;
     background-color: red;
     border-radius: 50%;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }

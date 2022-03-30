@@ -107,15 +107,15 @@
 
   .hero__title,
   .hero__paragraph {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
   .hero__title--name {
-    font-size: 3rem;
+    font-size: 3.4rem;
   }
   .main__button {
-    width: 18rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
+    width: 23rem;
+    padding: 2rem;
+    font-size: 2rem;
     margin-top: 3rem;
   }
 }

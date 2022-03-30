@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 0.4rem;
 }
 
 .project__info__content {
@@ -120,20 +121,18 @@
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  -webkit-animation: slide-in-fwd-bottom 0.4s
+  -webkit-animation: slide-in-fwd-bottom 0.9s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-fwd-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-bottom 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .project__info__content:hover > .project__info__text {
-  -webkit-animation: slide-in-top 0.4s ease-in both;
-  animation: slide-in-top 0.4s ease-in both;
+  -webkit-animation: slide-in-top 0.6s ease-in both;
+  animation: slide-in-top 0.6s ease-in both;
 }
 
 .project__info__content:hover ~ .project__name {
   opacity: 0;
-  -webkit-animation: slide-in-top 0.4s ease-in both;
-  animation: slide-in-top 0.4s ease-in both;
 }
 .project__info__content:hover > .links__container {
   opacity: 0;
@@ -156,6 +155,20 @@
     width: 90%;
     height: 32rem;
     margin-bottom: 2rem;
+  }
+
+  .project__name {
+    font-size: 3.2rem;
+    margin-left: 0.4rem;
+  }
+
+  .project__name > svg {
+    margin-left: 0.4rem;
+    margin-bottom: -0.6rem;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    font-size: 2rem;
+    transition: all 0.4s ease-out;
   }
 
   .projects__container {
