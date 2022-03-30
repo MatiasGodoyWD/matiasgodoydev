@@ -165,8 +165,11 @@
   .project__info__title {
     font-size: 2.8rem;
   }
-  .project__info__stack {
+  .project__info__subtitle {
     font-size: 2rem;
+  }
+  .project__info__stack {
+    font-size: 1.8rem;
   }
   .project__link {
     width: 15rem;

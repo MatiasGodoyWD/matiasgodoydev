@@ -34,3 +34,17 @@
 .footer__p-span {
   color: var(--secondary-pink);
 }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .footer {
+    height: 18vh;
+    padding: 2rem 0rem;
+  }
+  .footer__media {
+    width: 50%;
+  }
+
+  .footer__p {
+    font-size: 1.5rem;
+  }
+}
