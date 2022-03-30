@@ -90,6 +90,7 @@
   .navbar {
     justify-content: space-between;
     padding-right: 3.3rem;
+    max-width: unset;
   }
 
   #navbar__bars {
