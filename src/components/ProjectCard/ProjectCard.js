@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
           <a href={project.repo} className="project__link">
             <FontAwesomeIcon icon={faGithub} /> Repo
           </a>
-          <a href={project.repo} className="project__link">
+          <a href={project.demo} className="project__link">
             <FontAwesomeIcon icon={faDesktop} /> Demo
           </a>
         </div>
