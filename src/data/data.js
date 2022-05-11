@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Globoshop",
-    stack: "React",
+    stack: "ReactJs",
     description: "E-commerce",
     repo: "https://github.com/MatiasGodoyWD/globoshop-react",
     demo: "https://globoshop-react.vercel.app/",
