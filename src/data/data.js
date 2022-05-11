@@ -1,10 +1,10 @@
 export const projects = [
   {
     name: "Globoshop",
-    stack: "Javascript",
+    stack: "React",
     description: "E-commerce",
-    repo: "https://github.com/MatiasGodoyWD/globoshop",
-    demo: "https://globoshop.vercel.app/",
+    repo: "https://github.com/MatiasGodoyWD/globoshop-react",
+    demo: "https://globoshop-react.vercel.app/",
   },
   {
     name: "Fauno",
